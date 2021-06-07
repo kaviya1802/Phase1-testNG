@@ -1,56 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3705" started-at="2021-06-07T13:22:30 UTC" finished-at="2021-06-07T13:22:34 UTC">
+  <suite name="Default suite" duration-ms="4710" started-at="2021-06-07T15:31:34 UTC" finished-at="2021-06-07T15:31:39 UTC">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3705" started-at="2021-06-07T13:22:30 UTC" finished-at="2021-06-07T13:22:34 UTC">
-      <class name="com.ecom.selenium.tests.amazontests.ExplicitWaitTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.tests.amazontests.ExplicitWaitTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="2250" started-at="2021-06-07T13:22:30 UTC" finished-at="2021-06-07T13:22:32 UTC">
+    <test name="Default test" duration-ms="4710" started-at="2021-06-07T15:31:34 UTC" finished-at="2021-06-07T15:31:39 UTC">
+      <class name="com.ecom.selenium.external.elements.DemoCheckBoxTest">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="943" started-at="2021-06-07T15:31:34 UTC" finished-at="2021-06-07T15:31:35 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="FAIL" signature="verifyElectronicsLinkTest()[pri:0, instance:com.ecom.selenium.tests.amazontests.ExplicitWaitTest@10bbd20a]" name="verifyElectronicsLinkTest" duration-ms="1278" started-at="2021-06-07T13:22:32 UTC" finished-at="2021-06-07T13:22:34 UTC">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="selectByIndex()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="selectByIndex" duration-ms="148" started-at="2021-06-07T15:31:35 UTC" finished-at="2021-06-07T15:31:35 UTC">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.97)
-  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.4.0-1128-aws x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
-System info: host: 'ip-172-31-32-176', ip: '172.31.32.176', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-1128-aws', java.version: '1.8.0_292'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.97, webStorageEnabled: true}
-Session ID: 46e60058d7d6226562f11f2a222f4919]]>
+              <![CDATA[expected [I have a Cycle] but found [I have a C]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.97)
-  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.4.0-1128-aws x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
-System info: host: 'ip-172-31-32-176', ip: '172.31.32.176', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-1128-aws', java.version: '1.8.0_292'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.97, webStorageEnabled: true}
-Session ID: 46e60058d7d6226562f11f2a222f4919
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at com.ecom.selenium.tests.amazontests.ExplicitWaitTest.verifyElectronicsLinkTest(ExplicitWaitTest.java:47)
+              <![CDATA[java.lang.AssertionError: expected [I have a Cycle] but found [I have a C]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.ecom.selenium.external.elements.DemoCheckBoxTest.selectByIndex(DemoCheckBoxTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,15 +55,63 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyElectronicsLinkTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.tests.amazontests.ExplicitWaitTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="129" started-at="2021-06-07T13:22:34 UTC" finished-at="2021-06-07T13:22:34 UTC">
+        </test-method> <!-- selectByIndex -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="67" started-at="2021-06-07T15:31:35 UTC" finished-at="2021-06-07T15:31:35 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.ecom.selenium.tests.amazontests.ExplicitWaitTest -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="696" started-at="2021-06-07T15:31:35 UTC" finished-at="2021-06-07T15:31:36 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="verfiyCheckBoxExistTest()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="verfiyCheckBoxExistTest" duration-ms="47" started-at="2021-06-07T15:31:36 UTC" finished-at="2021-06-07T15:31:36 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyCheckBoxExistTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="111" started-at="2021-06-07T15:31:36 UTC" finished-at="2021-06-07T15:31:36 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="670" started-at="2021-06-07T15:31:36 UTC" finished-at="2021-06-07T15:31:37 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="verifyCheckboxSelection()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="verifyCheckboxSelection" duration-ms="147" started-at="2021-06-07T15:31:37 UTC" finished-at="2021-06-07T15:31:37 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckboxSelection -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="120" started-at="2021-06-07T15:31:37 UTC" finished-at="2021-06-07T15:31:37 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="651" started-at="2021-06-07T15:31:37 UTC" finished-at="2021-06-07T15:31:38 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="verifyDefaultCheckBoxTest()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="verifyDefaultCheckBoxTest" duration-ms="49" started-at="2021-06-07T15:31:38 UTC" finished-at="2021-06-07T15:31:38 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDefaultCheckBoxTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="118" started-at="2021-06-07T15:31:38 UTC" finished-at="2021-06-07T15:31:38 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="setUpDriver" is-config="true" duration-ms="690" started-at="2021-06-07T15:31:38 UTC" finished-at="2021-06-07T15:31:39 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="verifyDropDown()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="verifyDropDown" duration-ms="78" started-at="2021-06-07T15:31:39 UTC" finished-at="2021-06-07T15:31:39 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDropDown -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.ecom.selenium.external.elements.DemoCheckBoxTest@10bbd20a]" name="closeDriver" is-config="true" duration-ms="114" started-at="2021-06-07T15:31:39 UTC" finished-at="2021-06-07T15:31:39 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.ecom.selenium.external.elements.DemoCheckBoxTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

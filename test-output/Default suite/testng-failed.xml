@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecom.selenium.tests.amazontests.ExplicitWaitTest">
+      <class name="com.ecom.selenium.external.elements.DemoCheckBoxTest">
         <methods>
-          <include name="closeDriver"/>
           <include name="setUpDriver"/>
-          <include name="verifyElectronicsLinkTest"/>
+          <include name="closeDriver"/>
+          <include name="selectByIndex"/>
         </methods>
-      </class> <!-- com.ecom.selenium.tests.amazontests.ExplicitWaitTest -->
+      </class> <!-- com.ecom.selenium.external.elements.DemoCheckBoxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
